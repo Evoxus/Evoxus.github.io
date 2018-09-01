@@ -1,5 +1,4 @@
 /* Typography */
-
 html {
 	font-family: 'Roboto', sans-serif;
 }
@@ -33,7 +32,6 @@ html {
 }
 
 /* Custom Styles */
-
 main {
 	display: flex;
 	flex-direction: column;
@@ -44,17 +42,25 @@ main {
 	text-shadow: 2px 2px 2px rgb(53, 53, 53);
 }
 
-main hr {
-	width: 600px;
+.hr {
+	display: inline-block;
 }
 
-main > .intro {
+.hr:after {
+	content: '';
+	display: block;
+	border-top: 2px solid #FAFAFA;
+	margin-top: 0.2em;
+}
+
+main>.intro {
+	margin: 0 auto;
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main > .tagline {
+main>.tagline {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
@@ -69,7 +75,7 @@ main > .tagline {
 }
 
 .icons-social i:active {
-	color: white;
+	color: #FAFAFA;
 }
 
 .devto {
@@ -78,7 +84,8 @@ main > .tagline {
 
 .devto svg {
 	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
+	margin-left: 0.675rem;
+	;
 	width: 2.65rem;
 	height: 2.65rem;
 }
