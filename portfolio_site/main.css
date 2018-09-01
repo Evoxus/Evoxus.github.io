@@ -25,6 +25,21 @@ a:focus,
 button:focus {
   outline: none;
   border: none;
+  color: rgb(180, 180, 180);
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+a:visited {
+  color: rgb(0, 0, 99);
+}
+
+a:hover {
+  text-decoration: none;
+  color: rgb(53, 53, 53);
 }
 
 #profile-pic {
