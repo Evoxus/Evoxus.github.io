@@ -2,111 +2,254 @@
 <html>
 
 <head>
+
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
   <title>Michael H Ploughman</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300,400,700,300italic,400italic,700italic" rel="stylesheet"
+    type="text/css">
+  <link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet" type="text/css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet"
+    type="text/css">
+
+  <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
     crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+
+  <!-- Custom CSS  -->
+  <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+
 </head>
 
-<body>
-  <!-- TODO add current section highlighting -->
-  <!-- TODO get rid of selected button outline -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
-    <div class="container">
-      <a class="navbar-brand" href="../index.html">MHP</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-        aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <button id="home-btn" type="button">Top</button>
-          </li>
-          <li class="nav-item">
-            <button id="projects-btn">Projects</button>
-          </li>
-          <li class="nav-item">
-            <button id="contact-btn">Contact Me</button>
-          </li>
-        </ul>
-      </div>
-    </div>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="../index.html">Michael H Ploughman</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About Me</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact Me</a>
+      </li>
+    </ul>
   </nav>
-  <div class="container">
-    <div class="jumbotron" id="home-target">
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Michael H Ploughman</h1>
+      <h4 class="mb-5">
+        <em>Full Stack Developer | Tech Enthusiast | Linux Casual</em>
+      </h4>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-dark" id="about">
+    <div class="container text-center">
       <div class="row">
-        <div class="col-lg-8 text-right order-lg-2 order-md-1">
-          <h1 class="hr">Michael H Ploughman</h1>
-          <h4>Full Stack Developer | Tech Enthusiast | Linux Casual</h4>
-        </div>
-        <div class="col-lg-4 order-lg-1 order-md-2">
-          <img id="profile-pic" src="profile_pic.JPG">
-          <p>Full stack developer, web app builder, with a love for Python.
+        <div class="col-lg-10 mx-auto">
+          <h2 class="hr">Hi, I'm Michael. This is a little about me.</h2>
+          <p>
+            A tech savvy person by nature, I have worked with, on and around computers since my family first
+            got an Apple IIe when I was 3. I'm comfortable designing the layout of a site to building the backend that
+            keeps
+            it all running. My deep love of learning is what is pulling me to the web development
+            environment.
           </p>
         </div>
       </div>
     </div>
-  </div>
-  <div class="container" id="projects-target">
-    <div class="row">
-      <div class="col-md-6">
-        <a href="https://floating-brushlands-12271.herokuapp.com/">
-          <img class="img-thumbnail" src="Yelpcamp.png" alt="Yelpcamp">
-        </a>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">What I Can Offer</h2>
       </div>
-      <div class="col-md-6">
-        <a href="fictional_startup/startupLanding.html">
-          <img class="img-thumbnail" src="fictional_startup.png" alt="fictional startup landing page">
-        </a>
-      </div>
-      <div class="col-md-6">
-        <a href="https://github.com/Evoxus/draw-a-flower">
-          <img class="img-thumbnail" src="draw_flower.png" alt="flower drawing">
-        </a>
-      </div>
-      <div class="col-md-6">
-        <a href="https://github.com/Evoxus/desktop_db">
-          <img class="img-thumbnail" src="game_database.png" alt="game database">
-        </a>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Responsive</strong>
+          </h4>
+          <p class="text-faded mb-0">Using Bootstrap 4 to build mobile first web apps.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Design</strong>
+          </h4>
+          <p class="text-faded mb-0">From front to back.</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Favorited</strong>
+          </h4>
+          <p class="text-faded mb-0">Millions of users
+            <i class="fas fa-heart"></i>
+            Start Bootstrap!</p>
+        </div>
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Question</strong>
+          </h4>
+          <p class="text-faded mb-0">I mustache you a question...</p>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="container" id="contact-target">
-    <h3>Contact Me:</h3>
-    <p>Email - michael@michaelhploughman.com</p>
-    <a target="_blank" href="https://github.com/Evoxus">
-      <i class="fab fa-github icons-social"></i>
-    </a>
-    <a target="_blank" href="https://twitter.com/MichaelHP42">
-      <i class="fab fa-twitter icons-social"></i>
-    </a>
-    <a target="_blank" href="https://stackoverflow.com/story/michaelhploughman">
-      <i class="fab fa-stack-overflow icons-social"></i>
-    </a>
-    <a target="_blank" href="https://www.linkedin.com/in/michael-ploughman-12319714a/">
-      <i class="fab fa-linkedin icons-social"></i>
-    </a>
-    <a target="_blank" href="https://www.freecodecamp.org">
-      <i class="fab fa-free-code-camp icons-social"></i>
-    </a>
-    <a target="_blank" href="https://codepen.io">
-      <i class="fab fa-codepen icons-social"></i>
-    </a>
-  </div>
+  </section>
 
+  <!-- Callout -->
+  <section class="callout">
+    <div class="container text-center">
+      <h2 class="mx-auto mb-5">Ready for
+        <em>your</em>
+        next website!</h2>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#contact">Contact Me Now!</a>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="content-section bg-primary" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://floating-brushlands-12271.herokuapp.com/">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>YelpCamp</h2>
+                <p class="mb-0">A Yelp clone for campsites.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/Yelpcamp-resize.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="fictional_startup/startupLanding.html">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Landing Pages</h2>
+                <p class="mb-0">A landing page for a fictional company.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/fictional_startup-resize.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/Evoxus/draw-a-flower">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Draw a Flower</h2>
+                <p class="mb-0">A little exercise using Python's Turtle graphics to draw.</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/draw_flower-resize.png" alt="">
+          </a>
+        </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://github.com/Evoxus/desktop_db">
+            <span class="caption">
+              <span class="caption-content">
+                <h2>Game Library</h2>
+                <p class="mb-0">A database app written in Python</p>
+              </span>
+            </span>
+            <img class="img-fluid" src="img/game_database.png" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer text-center bg-dark" id="contact">
+    <div class="container">
+      <p>Email me:
+        <a href="mailto:michael@michaelhploughman.com">
+          michael@michaelhploughman.com
+        </a>
+      </p>
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://github.com/Evoxus">
+            <i class="fab fa-github icons-social"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.linkedin.com/in/michael-ploughman-12319714a/">
+            <i class="fab fa-linkedin icons-social"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://stackoverflow.com/story/michaelhploughman">
+            <i class="fab fa-stack-overflow icons-social"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://twitter.com/MichaelHP42">
+            <i class="fab fa-twitter icons-social"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Michael H Ploughman 2018</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap, jQuery & popper.js -->
   <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
     crossorigin="anonymous"></script>
-  <script src="main.js"></script>
+
+  <!-- jQuery easing plugin -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+  <!-- Custom Scripts -->
+  <script src="js/index.js"></script>
+
 </body>
 
 </html>
