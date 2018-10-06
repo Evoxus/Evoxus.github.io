@@ -18,6 +18,14 @@ body {
   padding-bottom: 7.5rem;
 }
 
+#about {
+  padding: 15rem 0;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.1) 100%), url("../img/caspar-rubin-224229-unsplash-resize.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .content-section-heading h2 {
   font-size: 3rem;
 }
