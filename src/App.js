@@ -1,25 +1,18 @@
-import React, { Component } from "react";
+import React, {
+  Component
+} from "react";
 import "./App.css";
-
-// let quotes = (function() {
-//   let quotes = null;
-//   $.ajax({
-//     async: false,
-//     global: false,
-//     url: "quotes.json",
-//     dataType: "json",
-//     success: function(data) {
-//       quotes = data;
-//     }
-//   });
-//   return quotes;
-// })();
-
-// console.log(quotes);
+import quotes from './quotes';
 
 class QuoteBox extends Component {
   render() {
-    return <p> Testing </p>;
+    const newQuote = randomNumber();
+    console.log(newQuote);
+    return <div>
+      <p>{quotes[newQuote].quote}
+        <caption>{quotes[newQuote].author}</caption>
+      </p>
+    </div>
   }
 }
 
@@ -27,6 +20,10 @@ class App extends Component {
   render() {
     return <QuoteBox />;
   }
+}
+
+function randomNumber() {
+  return Math.round(Math.random() * 102)
 }
 
 export default App;
