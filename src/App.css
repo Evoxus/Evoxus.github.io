@@ -30,3 +30,11 @@
     transform: rotate(360deg);
   }
 }
+
+#quote-box {
+  background-color: yellow;
+  margin-top: 40px;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 3px 3px rgb(200, 200, 200);
+}
