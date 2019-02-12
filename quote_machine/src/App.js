@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { render } from "react-snapshot";
 import "./App.css";
 import quotes from './quotes';
 
