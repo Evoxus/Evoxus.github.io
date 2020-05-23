@@ -1,341 +1,341 @@
 html {
-    background-color: #383838;
+  background-color: #383838;
 }
 
 a {
-    color: #AAA;
-    text-decoration: none;
-    transition-duration: 100ms;
+  color: #aaa;
+  text-decoration: none;
+  transition-duration: 100ms;
 }
 
 a:hover {
-    transition-duration: 100ms;
-    color: #A63A00;
+  transition-duration: 100ms;
+  color: #a63a00;
 }
 
 a:active {
-    transition-duration: 100ms;
-    color: #FF5F09;
+  transition-duration: 100ms;
+  color: #ff5f09;
 }
 
 body {
-    font-family: 'Vollkorn', serif;
-    box-sizing: border-box;
-    line-height: 2em;
-    color: #AAAAAA;
+  font-family: "Vollkorn", serif;
+  box-sizing: border-box;
+  line-height: 2em;
+  color: #aaaaaa;
 }
 
 main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 
 h1 {
-    line-height: 1.25em;
+  line-height: 1.25em;
 }
 
 .header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 40px;
-    background-color: #0572B3;
-    z-index: 1000;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #0572b3;
+  z-index: 1000;
 }
 
 header #brand {
-    font-weight: bold;
-    font-family: 'Unica One', cursive;
-    color: #FF5900;
-    font-size: 2em;
-    float: left;
-    padding-left: 10px;
+  font-weight: bold;
+  font-family: "Unica One", cursive;
+  color: #ff5900;
+  font-size: 2em;
+  float: left;
+  padding-left: 10px;
 }
 
 .navbar {
-    float: right;
-    margin-right: 5%;
+  float: right;
+  margin-right: 5%;
 }
 
 .navbar ul {
-    position: absolute;
-    top: 40px;
-    left: 0;
-    width: 100%;
-    margin: 0;
-    display: none;
-    padding-left: 0;
-    height: 40px;
-    list-style: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  margin: 0;
+  display: none;
+  padding-left: 0;
+  height: 40px;
+  list-style: none;
 }
 
 .navbar a {
-    display: block;
-    height: 40px;
-    line-height: 40px;
-    padding-left: 5%;
-    background-color: rgba(5, 114, 179, 0.9);
-    border-top: 1px solid #453c3d;
-    color: #FFB000;
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 5%;
+  background-color: rgba(5, 114, 179, 0.9);
+  border-top: 1px solid #453c3d;
+  color: #ffb000;
 }
 
 .menu-toggle {
-    float: right;
-    background-color: #0572B3;
-    margin-right: 5%;
-    border: none;
-	cursor: pointer;
-	color: #AAA;
-	padding: 10px 14px;
-    text-decoration: none;
-    background: rgba(5, 114, 179, 1);
-    height: 40px;
-    transition: all .3s ease;
+  float: right;
+  background-color: #0572b3;
+  margin-right: 5%;
+  border: none;
+  cursor: pointer;
+  color: #aaa;
+  padding: 10px 14px;
+  text-decoration: none;
+  background: rgba(5, 114, 179, 1);
+  height: 40px;
+  transition: all 0.3s ease;
 }
 
 .navbar button:hover {
-    color: #FF5900;
-    background-color: #0572B3;
-    cursor: pointer;
+  color: #ff5900;
+  background-color: #0572b3;
+  cursor: pointer;
 }
 
 section {
-    padding: 2% 4%;
+  padding: 2% 4%;
 }
 
 .sbs-container-main {
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .sbs-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
-@media only screen and (max-device-width : 340px) {
-    .sbs-container {
-        flex-direction: column;
-    }
+@media only screen and (max-device-width: 340px) {
+  .sbs-container {
+    flex-direction: column;
+  }
 }
 
 .title {
-    font-family: 'Unica One', cursive;
-    color: #FF5900;
-    text-shadow: 1px 1px 1px black;
+  font-family: "Unica One", cursive;
+  color: #ff5900;
+  text-shadow: 1px 1px 1px black;
 }
 
 .contact-info {
-    text-align: center;
+  text-align: center;
 }
 
 .contact-info a {
-    margin: 10px 5px;
+  margin: 10px 5px;
 }
 
 .contact-info i {
-    text-shadow: 1px 1px 2px black;
+  text-shadow: 1px 1px 2px black;
 }
 
 .tech-stack {
-    text-align: center;
-    text-shadow: 1px 1px 2px black;
+  text-align: center;
+  text-shadow: 1px 1px 2px black;
 }
 
 .headline {
-    text-shadow: 1px 1px 1px black;
+  text-shadow: 1px 1px 1px black;
 }
 
 .indent {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .project-card {
-    margin: 15px;
-    padding: 5px;
-    border-radius: 7px;
-    background-color: #A67300;
-    color: black;
-    border: 1px solid black;
-    box-shadow: 1px 1px 2px black;
-    transition-duration: 250ms;
-    text-align: center;
-    min-height: 300px;
+  margin: 15px;
+  padding: 5px;
+  border-radius: 7px;
+  background-color: #a67300;
+  color: black;
+  border: 1px solid black;
+  box-shadow: 1px 1px 2px black;
+  transition-duration: 250ms;
+  text-align: center;
+  min-height: 300px;
 }
 
 .project-title {
-    font-size: 1.25em;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  font-size: 1.25em;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
 .project-card img {
-    border: 1px solid #383838;
-    border-radius: 3px;
-    width: 100%;
-    transition-duration: 200ms;
+  border: 1px solid #383838;
+  border-radius: 3px;
+  width: 100%;
+  transition-duration: 200ms;
 }
 .project-card img:hover {
-    transform: scale(1.5) translate(35px);
-    transition-duration: 200ms;
+  transform: scale(1.5) translate(35px);
+  transition-duration: 200ms;
 }
 
 .project-card p {
-    margin-top: 0;
-    padding: 0 8px 8px 8px;
+  margin-top: 0;
+  padding: 0 8px 8px 8px;
 }
 
 .project-card:hover {
-    transition-duration: 250ms;
-    transform: scale(1.1);
+  transition-duration: 250ms;
+  transform: scale(1.1);
 }
 
 .project-card a {
-    color: #FFB000;
+  color: #ffb000;
 }
 
 .project-card a:hover {
-    color: #FFC441;
-    text-decoration: underline;
+  color: #ffc441;
+  text-decoration: underline;
 }
 
 .project-screenshot {
-    height: auto;
-    width: 150px;
+  height: auto;
+  width: 150px;
 }
 
 .right-project-info p {
-    line-height: 1.1em;
+  line-height: 1.1em;
 }
 
 .stack-icon i {
-    margin: 5px 10px;
+  margin: 5px 10px;
 }
 
-#projects-title{
-    text-align: center;
+#projects-title {
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 footer div a {
-    margin: 10px;
-    text-shadow: 1px 1px 2px black;
+  margin: 10px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .scroll-to-top {
-    position: fixed;
-    right: 15px;
-    bottom: 15px;
-    display: none;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    color: white;
-    background-color: rgba(3, 68,106, 0.5);
-    line-height: 45px;
-    border-radius: 7px;
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+  display: none;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: white;
+  background-color: rgba(3, 68, 106, 0.5);
+  line-height: 45px;
+  border-radius: 7px;
 }
 
 .scroll-to-top:focus,
 .scroll-to-top:hover {
-    color: white;
+  color: white;
 }
 
 .scroll-to-top:hover {
-    background: rgba(4, 87, 137, 0.5);
+  background: rgba(4, 87, 137, 0.5);
 }
 
 .scroll-to-top i {
-    font-weight: 800;
+  font-weight: 800;
 }
 
-@media only screen and (min-device-width : 768px) {
-    body {
-        font-size: 20px;
-        line-height: 1.6em;
-    }
-    .navbar {
-        padding-right: 6%;
-        padding-left: 6%;
-    }
-    .navbar ul {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        margin: 0;
-        display: inline-block;
-    }
-    .navbar li {
-        font-family: 'Unica One', cursive;
-        font-size: 1.5em;
-        display: flex;
-        float: right;
-        margin: 0 10px;
-    }
-    .navbar a {
-        background-color: rgba(5, 114, 179, 1);
-        border-top: none;
-        padding-left: 0;
-    }
-    .navbar a:hover {
-        background-color: #3D97CD;
-        color: #D69400;
-    }
-    .navbar button {
-        display: none;
-    }
-    section {
-        margin-right: 5%;
-        margin-left: 5%;
-    }
-    h4 {
-        font-size: 1.25em;
-    }
-    .sbs-container-main {
-        flex-direction: row;
-    }
-    .contact-info {
-        min-width: 40%;
-    }
-    
-    .bio {
-        max-width: 40%;
-    }
-    
-    .tech-stack {
-        min-width: 40%;
-    }
-    
-    .left-project-info {
-        min-width: 49%;
-    }
-    
-    .right-project-info {
-        min-width: 49%;
-    }
-    .projects {
-        display: flex;
-        justify-content: space-evenly;
-    }
-    .project-card {
-        max-width: 40%;
-        min-width: 40%;
-    }
-    .project-card:hover {
-        transition-duration: 250ms;
-        transform: scale(1.2);
-    }
-    .project-screenshot {
-        max-width: 100%;
-        height: auto;
-    }
+@media only screen and (min-device-width: 768px) {
+  body {
+    font-size: 20px;
+    line-height: 1.6em;
+  }
+  .navbar {
+    padding-right: 6%;
+    padding-left: 6%;
+  }
+  .navbar ul {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin: 0;
+    display: inline-block;
+  }
+  .navbar li {
+    font-family: "Unica One", cursive;
+    font-size: 1.5em;
+    display: flex;
+    float: right;
+    margin: 0 10px;
+  }
+  .navbar a {
+    background-color: rgba(5, 114, 179, 1);
+    border-top: none;
+    padding-left: 0;
+  }
+  .navbar a:hover {
+    background-color: #3d97cd;
+    color: #d69400;
+  }
+  .navbar button {
+    display: none;
+  }
+  section {
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  .sbs-container-main {
+    flex-direction: row;
+  }
+  .contact-info {
+    min-width: 40%;
+  }
+
+  .bio {
+    max-width: 40%;
+  }
+
+  .tech-stack {
+    min-width: 40%;
+  }
+
+  .left-project-info {
+    min-width: 49%;
+  }
+
+  .right-project-info {
+    min-width: 49%;
+  }
+  .projects {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .project-card {
+    max-width: 40%;
+    min-width: 40%;
+  }
+  .project-card:hover {
+    transition-duration: 250ms;
+    transform: scale(1.2);
+  }
+  .project-screenshot {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 /* Color Pallette */
