@@ -321,12 +321,15 @@ footer div a {
     min-width: 49%;
   }
   .projects {
+    margin: 0 auto;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
+    max-width: 90%;
   }
   .project-card {
-    max-width: 40%;
-    min-width: 40%;
+    min-width: 200px;
+    max-width: 350px;
   }
   .project-card:hover {
     transition-duration: 250ms;
