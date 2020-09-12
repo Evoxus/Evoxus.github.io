@@ -19,7 +19,7 @@ a:active {
 }
 
 body {
-  font-family: "Vollkorn", serif;
+  font-family: "Noto Sans JP", sans-serif;
   box-sizing: border-box;
   line-height: 2em;
   color: #aaaaaa;
@@ -41,7 +41,7 @@ h1 {
   left: 0;
   width: 100%;
   height: 40px;
-  background-color: #0572b3;
+  background-color: #035D91;
   z-index: 1000;
 }
 
@@ -52,6 +52,7 @@ header #brand {
   font-size: 2em;
   float: left;
   padding-left: 10px;
+  text-shadow: 1px 1px 2px black;
 }
 
 .navbar {
@@ -76,9 +77,8 @@ header #brand {
   height: 40px;
   line-height: 40px;
   padding-left: 5%;
-  background-color: rgba(5, 114, 179, 0.9);
   border-top: 1px solid #453c3d;
-  color: #ffb000;
+  color: #ffffff;
 }
 
 .menu-toggle {
@@ -139,9 +139,26 @@ section {
   text-shadow: 1px 1px 2px black;
 }
 
+.tech-stack-container {
+  background-color: #035D91;
+  margin: 0;
+  border-bottom: 1px solid black;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.479);
+}
+
 .tech-stack {
   text-align: center;
   text-shadow: 1px 1px 2px black;
+}
+
+.tech-stack a {
+  color: #fff;
+  transition-duration: 100ms;
+}
+
+.tech-stack a:hover {
+  transition-duration: 100ms;
+  color: #a63a00;
 }
 
 .headline {
@@ -156,19 +173,20 @@ section {
   margin: 15px;
   padding: 5px;
   border-radius: 7px;
-  background-color: #a67300;
+  background-color: #aaaaaa;
   color: black;
   border: 1px solid black;
   box-shadow: 1px 1px 2px black;
   transition-duration: 250ms;
-  text-align: center;
   min-height: 300px;
+  max-width: 85%;
 }
 
 .project-title {
   font-size: 1.25em;
   margin-top: 5px;
   margin-bottom: 5px;
+  text-align: center;
 }
 
 .project-card img {
@@ -184,6 +202,7 @@ section {
 
 .project-card p {
   margin-top: 0;
+  text-align: left;
   padding: 0 8px 8px 8px;
 }
 
@@ -193,11 +212,11 @@ section {
 }
 
 .project-card a {
-  color: #ffb000;
+  color: #03446A;
 }
 
 .project-card a:hover {
-  color: #ffc441;
+  color: #1287CC;
   text-decoration: underline;
 }
 
@@ -220,10 +239,14 @@ section {
 
 footer {
   text-align: center;
-  margin-bottom: 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #035D91;
+  color: #fff;
 }
 
-footer div a {
+footer a {
+  color: #fff;
   margin: 10px;
   text-shadow: 1px 1px 2px black;
 }
@@ -280,13 +303,12 @@ footer div a {
     margin: 0 10px;
   }
   .navbar a {
-    background-color: rgba(5, 114, 179, 1);
     border-top: none;
     padding-left: 0;
   }
   .navbar a:hover {
-    background-color: #3d97cd;
-    color: #d69400;
+    background-color: #035D91;
+    color: #ff5900;
   }
   .navbar button {
     display: none;
