@@ -54,7 +54,7 @@ h1 {
 */
 
 :root {
-  --primary-color: #035d91c0;
+  --primary-color: #035d91;
   --overlay-color: #035D91;
   --menu-speed: 0.75s;
 }
@@ -99,7 +99,7 @@ h1 {
   overflow: hidden;
 }
 
-.menu > li > a {
+.menu li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -114,9 +114,9 @@ h1 {
   transition: all 250ms;
 }
 
-.menu > li > a:hover {
+.menu li a:hover {
   background-color: #fff;
-  color: #03446A;
+  color: #035D91;
 }
 
 .menu li {
@@ -219,7 +219,7 @@ h1 {
   z-index: 1;
   top: 0;
   right: 0;
-  background-color: #11212c;
+  background-color: #035D91;
   opacity: 0.8;
   overflow-x: hidden;
   padding-top: 50px;
@@ -259,15 +259,12 @@ h1 {
     -ms-flex-direction: row;
     flex-direction: row;
   }
-  .menu .right {
-    margin-top: 15px;
-  }
-  .left > li > a {
+  .menu li a {
     padding-left: 10px;
     padding-top: 10px;
     margin-top: 0;
   }
-  .menu .left li {
+  .menu li {
     padding: 0;
   }
 }
