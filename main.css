@@ -45,61 +45,233 @@ h1 {
   z-index: 1000;
 }
 
-header #brand {
+
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 4 version
+*/
+
+:root {
+  --primary-color: #035d91c0;
+  --overlay-color: #035D91;
+  --menu-speed: 0.75s;
+}
+
+#brand {
+  display: inline;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  margin: 0;
   font-weight: bold;
   font-family: "Unica One", cursive;
   color: #ff5900;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.9);
   font-size: 2em;
-  float: left;
   padding-left: 10px;
-  text-shadow: 1px 1px 2px black;
 }
 
-.navbar {
-  float: right;
-  margin-right: 5%;
-}
-
-.navbar ul {
-  position: absolute;
-  top: 40px;
-  left: 0;
-  width: 100%;
-  margin: 0;
-  display: none;
-  padding-left: 0;
-  height: 40px;
+.menu ul {
   list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
-.navbar a {
-  display: block;
-  height: 40px;
-  line-height: 40px;
-  padding-left: 5%;
-  border-top: 1px solid #453c3d;
-  color: #ffffff;
+.menu-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: #035D91;
+  height: 50px;
+  overflow: hidden;
 }
 
-.menu-toggle {
-  float: right;
-  background-color: #0572b3;
-  margin-right: 5%;
-  border: none;
-  cursor: pointer;
-  color: #aaa;
-  padding: 10px 14px;
+.menu > li > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   text-decoration: none;
-  background: rgba(5, 114, 179, 1);
-  height: 40px;
-  transition: all 0.3s ease;
+  color: #fff;
+  margin-top: 5px;
+  padding-left: 15%;
+  padding-right: 10px;
+  border-radius: 2px;
+  -webkit-transition: all 250ms;
+  -o-transition: all 250ms;
+  transition: all 250ms;
 }
 
-.navbar button:hover {
-  color: #ff5900;
-  background-color: #0572b3;
-  cursor: pointer;
+.menu > li > a:hover {
+  background-color: #fff;
+  color: #03446A;
 }
+
+.menu li {
+  padding: 5px;
+}
+
+.menu-wrap .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 3;
+  opacity: 0;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+}
+
+.menu-wrap .hamburger {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 40px;
+  height: 40px;
+  padding: 0.3rem;
+  background-color: var(--primary-color);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/* Hamburger lines */
+.menu-wrap .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #11212c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+/* Create both lines above center */
+.menu-wrap .hamburger > div:before,
+.menu-wrap .hamburger > div:after {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background-color: #253048;
+}
+/* Move bottom line below center */
+.menu-wrap .hamburger > div:after {
+  top: 10px;
+}
+
+/* Toggler animation */
+.menu-wrap .toggler:checked + .hamburger > div {
+  -webkit-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+
+/* Turns Lines Into X */
+.menu-wrap .toggler:checked + .hamburger > div:before,
+.menu-wrap .toggler:checked + .hamburger > div:after {
+  top: 0;
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+/* Rotate On Hover When Checked */
+.menu-wrap .toggler:checked:hover + .hamburger > div {
+  -webkit-transform: rotate(225deg);
+  -ms-transform: rotate(225deg);
+  transform: rotate(225deg);
+}
+
+/* Default Closed Menu */
+.menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: #11212c;
+  opacity: 0.8;
+  overflow-x: hidden;
+  padding-top: 50px;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+/* Handle Opening Menu */
+.toggler:checked ~ .menu {
+  width: 250px;
+}
+
+@media only screen and (min-width: 768px) {
+  .toggler,
+  .menu-wrap .hamburger,
+  .menu-wrap .hamburger > div,
+  .menu-wrap .hamburger > div:before,
+  .menu-wrap .hamburger > div:after {
+    display: none;
+  }
+  .menu-wrap .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  .menu {
+    height: 50px;
+    width: 100%;
+    background-color: #035D91;
+    padding-top: 0;
+  }
+  .menu ul {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+  .menu .right {
+    margin-top: 15px;
+  }
+  .left > li > a {
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-top: 0;
+  }
+  .menu .left li {
+    padding: 0;
+  }
+}
+
 
 section {
   padding: 2% 4%;
