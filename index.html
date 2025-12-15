@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Unica+One&display=swap" rel="stylesheet">
+    <meta name="description" content="Michael H Ploughman - Fullstack Developer Portfolio">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" type="text/css" href="./main.css">
     <script src="https://kit.fontawesome.com/20647e588a.js" crossorigin="anonymous"></script>
-    <title>Michael H Ploughman</title>
+    <title>Michael H Ploughman | Fullstack Developer</title>
 </head>
 
 <body>
@@ -25,6 +26,8 @@
                 <div>
                     <div>
                         <ul>
+                            <li><a class="js-scroll-trigger" href="#about">ABOUT</a></li>
+                            <li><a class="js-scroll-trigger" href="#skills">SKILLS</a></li>
                             <li><a class="js-scroll-trigger" href="#projects">PROJECTS</a></li>
                             <li><a class="js-scroll-trigger" href="#contact">CONTACT</a></li>
                         </ul>
@@ -34,82 +37,173 @@
         </div>
     </header>
     <main>
-        <section class="headline">
-            <h1 class="title">Hello,</h1>
-            <h1 class="indent">I'm Michael Ploughman and I am a Fullstack Developer, Linux Enthusiast, and all
-                around Tech Nerd.</h1>
-        </section>
-        <section class="sbs-container-main">
-            <div class="contact-info">
-                <h4 class="title">You can reach me at:</h4>
-                <div>
-                    <a href="mailto:michael@michaelhploughman.com" target="_blank" aria-label="Send me an email"><i
-                            class="fas fa-envelope fa-2x"></i></a>
-                    <a href="https://github.com/Evoxus" target="_blank" aria-label="link to my github"><i
-                            class="fab fa-github-square fa-2x"></i></a>
-                </div>
-                <div>
-                    <a href="https://www.linkedin.com/in/michael-h-ploughman/" target="_blank"
-                        aria-label="link to my linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
-                    <a href="https://twitter.com/MichaelHP42" target="_blank" aria-label="link to my twitter"><i
-                            class="fab fa-twitter-square fa-2x"></i></a>
+        <section class="hero">
+            <div class="hero-content">
+                <span class="hero-greeting">Hello, I'm</span>
+                <h1 class="hero-name">Michael Ploughman</h1>
+                <p class="hero-tagline">Fullstack Developer <span class="divider">•</span> Linux Enthusiast <span class="divider">•</span> Tech Nerd</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn btn-primary js-scroll-trigger">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary js-scroll-trigger">Get In Touch</a>
                 </div>
             </div>
-            <div class="bio">
-                <p>
-                    I'm a full-stack dev who finds excitement in solving a problem that has stumped me or
-                    others. I love the challenge of coding new things and the constant
-                    learning and growing required to
-                    do so. I look forward to joining a team of world-class developers to learn from and contribute to.
-                </p>
-                <p>
-                    Outside of work/programming, I am an avid gamer, reader, and Linux distro hopper. I also like to
-                    find time
-                    to enjoy the outdoors, whether that be camping, taking a drive up mountain roads, or checking out
-                    the night sky.
-                </p>
+            <div class="hero-decoration"></div>
+        </section>
+        <section id="about" class="about-section">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-card bio-card">
+                    <div class="card-icon"><i class="fas fa-code"></i></div>
+                    <h3>Who I Am</h3>
+                    <p>
+                        I'm a full-stack developer who finds excitement in solving problems that have stumped me or
+                        others. I love the challenge of coding new things and the constant
+                        learning and growing required to do so.
+                    </p>
+                    <p>
+                        I look forward to joining a team of world-class developers to learn from and contribute to.
+                    </p>
+                </div>
+                <div class="about-card interests-card">
+                    <div class="card-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Beyond Code</h3>
+                    <p>
+                        Outside of work/programming, I am an avid gamer, reader, and Linux distro hopper. I also like to
+                        find time to enjoy the outdoors—whether camping, taking drives up mountain roads, or checking out
+                        the night sky.
+                    </p>
+                </div>
+                <div class="about-card contact-card">
+                    <div class="card-icon"><i class="fas fa-paper-plane"></i></div>
+                    <h3>Let's Connect</h3>
+                    <div class="social-links">
+                        <a href="mailto:michael@michaelhploughman.com" target="_blank" aria-label="Send me an email" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://github.com/Evoxus" target="_blank" aria-label="link to my github" class="social-link">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/michael-h-ploughman/" target="_blank" aria-label="link to my linkedin" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://twitter.com/MichaelHP42" target="_blank" aria-label="link to my twitter" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                            <span>Twitter</span>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="sbs-container-main tech-stack-container">
-            <div class="tech-stack">
-                <h4 class="title">Current Tech Stack</h4>
-                <div class="row">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"
-                        aria-label="link to MDN guide on HTML5"><i class="fab fa-html5 fa-4x"></i></a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank"
-                        aria-label="link to MDN on CSS3"><i class="fab fa-css3 fa-4x"></i></a>
-                    <a href="https://www.javascript.com/" target="_blank" aria-label="link to javascript.com"><i
-                        class="fab fa-js-square fa-4x"></i></a>
-                    <a href="https://reactjs.org/" target="_blank" aria-label="link to reactjs.org"><i
-                        class="fab fa-react fa-4x"></i></a>
+        <section id="skills" class="skills-section">
+            <div class="section-header">
+                <h2 class="section-title">Tech Stack</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-palette"></i> Frontend</h3>
+                    <div class="skills-list">
+                        <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank" class="skill-item" aria-label="HTML5">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </a>
+                        <a href="https://developer.mozilla.org/en-US/docs/Archive/CSS3" target="_blank" class="skill-item" aria-label="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </a>
+                        <a href="https://sass-lang.com/" target="_blank" class="skill-item" aria-label="SASS">
+                            <i class="fab fa-sass"></i>
+                            <span>SASS</span>
+                        </a>
+                        <a href="https://www.javascript.com/" target="_blank" class="skill-item" aria-label="JavaScript">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </a>
+                        <a href="https://reactjs.org/" target="_blank" class="skill-item" aria-label="React">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </a>
+                        <a href="https://angular.io" target="_blank" class="skill-item" aria-label="Angular">
+                            <i class="fab fa-angular"></i>
+                            <span>Angular</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="row">
-                    <a href="https://nodejs.org/en/" target="_blank" aria-label="link to nodejs.org"><i
-                        class="fab fa-node fa-4x"></i></a>
-                    <a href="https://www.postgresql.org/" target="_blank" aria-label="link to PostgreSQL.org"><i
-                        class="fas fa-database fa-4x"></i></a>
-                    <a href="https://www.python.org/" target="_blank" aria-label="link to python.org"><i
-                        class="fab fa-python fa-4x"></i></a>
-                    <a href="https://www.linuxfoundation.org/" target="_blank" aria-label="link to linuxfoundation.org"><i
-                        class="fab fa-linux fa-4x"></i></a>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-server"></i> Backend</h3>
+                    <div class="skills-list">
+                        <a href="https://nodejs.org/en/" target="_blank" class="skill-item" aria-label="Node.js">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </a>
+                        <a href="https://deno.land/" target="_blank" class="skill-item" aria-label="Deno">
+                            <i class="fas fa-dragon"></i>
+                            <span>Deno</span>
+                        </a>
+                        <a href="https://www.python.org/" target="_blank" class="skill-item" aria-label="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-database"></i> Databases</h3>
+                    <div class="skills-list">
+                        <a href="https://www.postgresql.org/" target="_blank" class="skill-item" aria-label="PostgreSQL">
+                            <i class="fas fa-database"></i>
+                            <span>PostgreSQL</span>
+                        </a>
+                        <a href="https://www.mongodb.com/" target="_blank" class="skill-item" aria-label="MongoDB">
+                            <i class="fas fa-leaf"></i>
+                            <span>MongoDB</span>
+                        </a>
+                        <a href="https://redis.io/" target="_blank" class="skill-item" aria-label="Redis">
+                            <i class="fas fa-bolt"></i>
+                            <span>Redis</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3 class="category-title"><i class="fas fa-tools"></i> Tools & OS</h3>
+                    <div class="skills-list">
+                        <a href="https://www.linuxfoundation.org/" target="_blank" class="skill-item" aria-label="Linux">
+                            <i class="fab fa-linux"></i>
+                            <span>Linux</span>
+                        </a>
+                        <a href="https://git-scm.com/" target="_blank" class="skill-item" aria-label="Git">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </a>
+                    </div>
                 </div>
             </div>
-            <div class="tech-stack">
-                <h4 class="title">Techs I'm currently learning or want to</h4>
-                <a href="https://angular.io" target="_blank" aria-label="link to angular.io"><i
-                    class="fab fa-angular fa-4x"></i></a>
-                <a href="https://kotlinlang.org/" target="_blank" aria-label="link to kotlinlang.org"><i
-                    class="fab fa-android fa-4x"></i></a>
-                <a href="https://rust-lang.org" target="_blank" aria-label="link to rust-lang.org"><i 
-                    class="fa fa-cog fa-4x"></i></a>
-                <a href="https://sass-lang.com/" target="_blank" aria-label="link to sass-lang.com"><i
-                    class="fab fa-sass fa-4x"></i></a>
+            <div class="learning-section">
+                <h3 class="learning-title"><i class="fas fa-graduation-cap"></i> Currently Exploring</h3>
+                <div class="learning-list">
+                    <a href="https://kotlinlang.org/" target="_blank" class="learning-item" aria-label="Kotlin">
+                        <i class="fab fa-android"></i>
+                        <span>Kotlin</span>
+                    </a>
+                    <a href="https://rust-lang.org" target="_blank" class="learning-item" aria-label="Rust">
+                        <i class="fas fa-cog"></i>
+                        <span>Rust</span>
+                    </a>
+                </div>
             </div>
         </section>
-        <section id="projects">
-            <h2 id="projects-title" class="title">PROJECTS</h2>
-            <div class="projects">
+        <section id="projects" class="projects-section">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
                 <div class="project-card" id="npmm">
                     <h5 class="project-title title">npmm</h5>
                     <div class="sbs-container">
@@ -145,122 +239,99 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card" id="only-tasteful">
-                    <h5 class="project-title title">OnlyTasteful</h5>
-                    <div class="sbs-container">
-                        <div class="left-project-info">
-                            <img class="project-screenshot" src="./images/OnlyTasteful_Screenshot_compressed.png"
-                                alt="Screenshot of OnlyTasteful">
-                            <div>
-                                <a href="https://github.com/Evoxus/OnlyTasteful-client" target="_blank"
-                                    aria-label="link to the client code for npmm">See the client code
-                                    here</a>
-                            </div>
-                            <div>
-                                <a href="https://only-tasteful.now.sh" target="_blank"
-                                    aria-label="link to the live OnlyTasteful app">Find
-                                    the app here</a>
-                            </div>
-                        </div>
-                        <div class="right-project-info">
-                            <p>A cookbook for the modern cook. This project is a solution to keeping one's recipes in a
-                                basic note taking app. This is a
-                                purpose built app for collecting recipes, modifying them, noting changes you've tried,
-                                etc.
-                            </p>
-                            <div class="stack-icon">
-                                <a href="https://github.com/Evoxus/OnlyTasteful-client/tree/master/src" target="_blank"
-                                    aria-label="link to react code for OnlyTasteful"><i
-                                        class="fab fa-react fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/OnlyTasteful-api" target="_blank"
-                                    aria-label="link to server side code for OnlyTasteful"><i
-                                        class="fab fa-node fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/OnlyTasteful-api/tree/master/migrations"
-                                    target="_blank" aria-label="link to database setup for OnlyTasteful"><i
-                                        class="fas fa-database fa-2x"></i>
-                                    PostgreSQL</a>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/OnlyTasteful_Screenshot_compressed.png" alt="Screenshot of OnlyTasteful">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Evoxus/OnlyTasteful-client" target="_blank" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://only-tasteful.now.sh" target="_blank" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card" id="pubcrawhub">
-                    <h5 class="project-title title">PUBCrawlHUB</h5>
-                    <div class="sbs-container">
-                        <div class="left-project-info">
-                            <img class="project-screenshot" src="./images/PUBCrawlHUBScreenshot_compressed.png"
-                                alt="Screenshot of PUBCrawlHUB">
-                            <div>
-                                <a href="https://github.com/Evoxus/PUBCrawlHub" target="_blank"
-                                    aria-label="link to the code for PUBCrawlHUB">Find my code here</a>
-                            </div>
-                            <div>
-                                <a href="http://michaelhploughman.com/PUBCrawlHub/" target="_blank"
-                                    aria-label="link to the live quiz app">Find the app here</a>
-                            </div>
+                    <div class="project-content">
+                        <h3 class="project-title">OnlyTasteful</h3>
+                        <p class="project-description">A modern cookbook for the contemporary cook. Purpose-built for collecting, modifying, and organizing recipes with personal notes.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-react"></i> React</span>
+                            <span class="tech-tag"><i class="fab fa-node-js"></i> Node.js</span>
+                            <span class="tech-tag"><i class="fas fa-database"></i> PostgreSQL</span>
                         </div>
-                        <div class="right-project-info">
-                            <p>An app to find bars and breweries and map out your pub crawl. Built for those that enjoy
-                                a good pub crawl.
-                            </p>
-                            <div class="stack-icon">
-                                <a href="https://github.com/Evoxus/PUBCrawlHub/blob/master/index.html" target="_blank"
-                                    aria-label="link to html code for PUBCrawlHUB"><i
-                                        class="fab fa-html5 fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/PUBCrawlHub/blob/master/main.css" target="_blank"
-                                    aria-label="link to css for PUBCrawlHUB"><i class="fab fa-css3 fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/PUBCrawlHub/blob/master/app.js" target="_blank"
-                                    aria-label="link to javascript for PUBCrawlHUB"><i
-                                        class="fab fa-js-square fa-2x"></i> jQuery</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/PUBCrawlHUBScreenshot_compressed.png" alt="Screenshot of PUBCrawlHUB">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Evoxus/PUBCrawlHub" target="_blank" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="http://michaelhploughman.com/PUBCrawlHub/" target="_blank" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="project-card" id="quiz-app">
-                    <h5 class="project-title title">QUIZ APP</h5>
-                    <div class="sbs-container">
-                        <div class="left-project-info">
-                            <img class="project-screenshot" src="./images/quiz-app_compressed.png"
-                                alt="Screenshot of quiz app">
-                            <div>
-                                <a href="https://github.com/Evoxus/OpticianQuizApp" target="_blank"
-                                    aria-label="link to the code for quiz app">Find my code here</a>
-                            </div>
-                            <div>
-                                <a href="http://michaelhploughman.com/OpticianQuizApp/" target="_blank"
-                                    aria-label="link to the live quiz app">Find the app here</a>
-                            </div>
+                    <div class="project-content">
+                        <h3 class="project-title">PUBCrawlHUB</h3>
+                        <p class="project-description">Find bars and breweries and map out your perfect pub crawl. Built for those who enjoy planning the perfect night out.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js-square"></i> jQuery</span>
                         </div>
-                        <div class="right-project-info">
-                            <p>A simple quiz app that guides the user through a series of questions.
-                                It keeps track of which question the user is on and score.
-                            </p>
-                            <div class="stack-icon">
-                                <a href="https://github.com/Evoxus/OpticianQuizApp/blob/master/index.html"
-                                    target="_blank" aria-label="link to html code for quiz app"><i
-                                        class="fab fa-html5 fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/OpticianQuizApp/blob/master/index.css"
-                                    target="_blank" aria-label="link to css for quiz app"><i
-                                        class="fab fa-css3 fa-2x"></i></a>
-                                <a href="https://github.com/Evoxus/OpticianQuizApp/blob/master/index.js" target="_blank"
-                                    aria-label="link to javascript for quiz app"><i class="fab fa-js-square fa-2x"></i>
-                                    jQuery</a>
+                    </div>
+                </article>
+                <article class="project-card">
+                    <div class="project-image">
+                        <img src="./images/quiz-app_compressed.png" alt="Screenshot of quiz app">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Evoxus/OpticianQuizApp" target="_blank" class="project-link" aria-label="View code">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="http://michaelhploughman.com/OpticianQuizApp/" target="_blank" class="project-link" aria-label="Live demo">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
                             </div>
                         </div>
                     </div>
-                </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Quiz App</h3>
+                        <p class="project-description">An interactive quiz application that guides users through questions while tracking progress and score in real-time.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag"><i class="fab fa-html5"></i> HTML5</span>
+                            <span class="tech-tag"><i class="fab fa-css3-alt"></i> CSS3</span>
+                            <span class="tech-tag"><i class="fab fa-js-square"></i> jQuery</span>
+                        </div>
+                    </div>
+                </article>
             </div>
         </section>
-        <footer id="contact">
-            <a href="mailto:michael@michaelhploughman.com" target="_blank" aria-label="Send me an email">Email me at:
-                michael@michaelhploughman.com</a>
-            <div>
-                <p>Or check out some of my social media</p>
-                <a href="https://github.com/Evoxus" target="_blank" aria-label="link to my github"><i
-                        class="fab fa-github-square fa-2x"></i></a>
-                <a href="https://www.linkedin.com/in/michael-h-ploughman/" target="_blank"
-                    aria-label="link to my linkedin"><i class="fab fa-linkedin fa-2x"></i></a>
-                <a href="https://twitter.com/MichaelHP42" target="_blank" aria-label="link to my twitter"><i
-                        class="fab fa-twitter-square fa-2x"></i></a>
+        <footer id="contact" class="footer">
+            <div class="footer-content">
+                <h2 class="footer-title">Let's Work Together</h2>
+                <p class="footer-text">I'm always open to discussing new opportunities and interesting projects.</p>
+                <a href="mailto:michael@michaelhploughman.com" class="footer-email">
+                    <i class="fas fa-envelope"></i> michael@michaelhploughman.com
+                </a>
+                <div class="footer-social">
+                    <a href="https://github.com/Evoxus" target="_blank" aria-label="GitHub" class="footer-social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/michael-h-ploughman/" target="_blank" aria-label="LinkedIn" class="footer-social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/MichaelHP42" target="_blank" aria-label="Twitter" class="footer-social-link">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+                <p class="footer-copyright">© 2025 Michael H Ploughman. All rights reserved.</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
