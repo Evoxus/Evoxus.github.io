@@ -212,4 +212,5 @@ $(function() {
   smoothScroll();
   scrollToTop();
   initHeroParticles();
+  document.getElementById('copyright-year').textContent = new Date().getFullYear();
 });
